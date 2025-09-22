@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games · QuantiCoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a class="logo" href="index.html" aria-label="QuantiCoral Home">
+                <span class="logo-mark"></span>
+                <span>QuantiCoral</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="games.html">Games</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <h1>Our Games</h1>
+                <div class="spacer-sm"></div>
+                <div class="grid">
+                    <div class="card">
+                        <img src="assets/img/placeholder-1.svg" alt="Game screenshot 1">
+                        <div class="card-body">
+                            <span class="badge">Casual</span>
+                            <h3>Bubble Splash</h3>
+                            <p>Simple tap-to-burst bubbles. Lightweight and joyful.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/placeholder-2.svg" alt="Game screenshot 2">
+                        <div class="card-body">
+                            <span class="badge">Arcade</span>
+                            <h3>Sky Dash</h3>
+                            <p>Endless runner with bright visuals and smooth controls.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/placeholder-3.svg" alt="Game screenshot 3">
+                        <div class="card-body">
+                            <span class="badge">Puzzle</span>
+                            <h3>Color Merge</h3>
+                            <p>Relaxing color matching to unwind anytime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <p class="muted">© <span id="year"></span> QuantiCoral. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter" title="Twitter">T</a>
+                <a href="#" aria-label="Facebook" title="Facebook">F</a>
+                <a href="#" aria-label="Instagram" title="Instagram">I</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

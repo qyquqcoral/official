@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · QuantiCoral</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a class="logo" href="index.html" aria-label="QuantiCoral Home">
+                <span class="logo-mark"></span>
+                <span>QuantiCoral</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="games.html">Games</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <h1>Contact</h1>
+                <div class="spacer-sm"></div>
+                <p class="muted">For business or partnership inquiries:</p>
+                <p>Email: <a href="mailto:hello@quanticoral.com">hello@quanticoral.com</a></p>
+                <div class="spacer-md"></div>
+                <p class="muted">Follow us</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter" title="Twitter">T</a>
+                    <a href="#" aria-label="Facebook" title="Facebook">F</a>
+                    <a href="#" aria-label="Instagram" title="Instagram">I</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <p class="muted">© <span id="year"></span> QuantiCoral. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter" title="Twitter">T</a>
+                <a href="#" aria-label="Facebook" title="Facebook">F</a>
+                <a href="#" aria-label="Instagram" title="Instagram">I</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
