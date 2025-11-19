@@ -415,6 +415,158 @@ section+section {
     box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
 }
 
+/* Meow module */
+.meow-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 24px;
+    align-content: start;
+}
+
+.meow-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+}
+
+.meow-copy--compact {
+    gap: 16px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.meow-copy--compact .section-title {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.meow-copy--compact p,
+.meow-copy--compact li {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.meow-copy--compact p+p {
+    margin-top: 8px;
+}
+
+.meow-copy--compact .feature-list {
+    padding-left: 16px;
+    gap: 8px;
+}
+
+.meow-copy--compact .meow-copy__body {
+    gap: 18px;
+}
+
+.meow-copy__body--simple {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.meow-copy__body--simple .cta-group {
+    margin-top: 4px;
+}
+
+.meow-copy--compact .meow-copy__story {
+    gap: 10px;
+}
+
+.meow-copy--compact .meow-copy__grid {
+    gap: 16px;
+}
+
+.meow-copy--compact .meow-info-block {
+    padding: 14px 16px;
+    gap: 8px;
+}
+
+.meow-copy--compact .meow-steps {
+    padding-left: 16px;
+    gap: 6px;
+}
+
+.meow-copy--compact .meow-copy__footer {
+    gap: 10px;
+}
+
+.meow-copy__body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
+
+.meow-copy__story {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.meow-copy__tagline {
+    color: rgba(229, 237, 255, 0.82);
+    margin: 8px 0 0 0;
+}
+
+.meow-copy__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.meow-info-block {
+    background: rgba(5, 9, 20, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100%;
+}
+
+.meow-info-block h3 {
+    color: #f4f7ff;
+    margin-bottom: 4px;
+}
+
+.meow-steps {
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.meow-steps li {
+    color: rgba(229, 237, 255, 0.88);
+}
+
+.meow-copy__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.meow-copy__cta-text {
+    margin: 0;
+    color: rgba(229, 237, 255, 0.82);
+}
+
+@media (max-width: 900px) {
+    .meow-copy__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .meow-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
 .game-feature.dark .feature-gallery img {
     border-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 45px rgba(2, 6, 23, 0.8);
