@@ -158,6 +158,23 @@ header {
     text-decoration: none;
 }
 
+.cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cta.ghost {
+    background: transparent;
+    color: var(--color-primary);
+    box-shadow: inset 0 0 0 2px rgba(76, 175, 239, 0.5);
+}
+
+.cta.ghost:hover {
+    box-shadow: inset 0 0 0 2px rgba(76, 175, 239, 0.8);
+    transform: none;
+}
+
 /* Sections */
 section {
     padding: 48px 0;
@@ -300,6 +317,9 @@ section+section {
     .two-col {
         grid-template-columns: 1fr;
     }
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Cards Grid */
@@ -307,6 +327,62 @@ section+section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 18px;
+}
+
+.game-feature {
+    background: linear-gradient(180deg, rgba(76, 175, 239, 0.04), rgba(76, 175, 239, 0));
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    align-items: stretch;
+}
+
+.feature-copy {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.feature-highlight h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feature-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-list li {
+    list-style: disc;
+}
+
+.feature-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.feature-gallery .gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.feature-gallery img {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
 }
 
 .card {
