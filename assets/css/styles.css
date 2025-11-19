@@ -320,6 +320,12 @@ section+section {
     .feature-grid {
         grid-template-columns: 1fr;
     }
+    .feature-grid.reverse .feature-gallery {
+        order: 2;
+    }
+    .feature-grid.reverse .feature-copy {
+        order: 1;
+    }
 }
 
 /* Cards Grid */
@@ -333,6 +339,11 @@ section+section {
     background: linear-gradient(180deg, rgba(76, 175, 239, 0.04), rgba(76, 175, 239, 0));
 }
 
+.game-feature.dark {
+    background: radial-gradient(circle at top, rgba(15, 23, 42, 0.92), #050810);
+    color: #e5edff;
+}
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -340,11 +351,30 @@ section+section {
     align-items: stretch;
 }
 
+.feature-grid.reverse .feature-gallery {
+    order: 1;
+}
+
+.feature-grid.reverse .feature-copy {
+    order: 2;
+}
+
 .feature-copy {
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 16px;
     padding: 24px;
+}
+
+.feature-copy.dark {
+    background: rgba(7, 12, 24, 0.7);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.feature-copy.dark p,
+.feature-copy.dark li {
+    color: rgba(229, 237, 255, 0.82);
 }
 
 .feature-highlight h3 {
@@ -383,6 +413,11 @@ section+section {
     border: 1px solid rgba(0, 0, 0, 0.08);
     object-fit: cover;
     box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+}
+
+.game-feature.dark .feature-gallery img {
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 45px rgba(2, 6, 23, 0.8);
 }
 
 .card {
