@@ -627,3 +627,4 @@ e-planning.net, 7fd99c56106cb0d7, RESELLER, c1ba615865ed87b2
 sonobi.com, eaec54c63f, RESELLER, d1a215d9eb5aee9e
 hicmobile.com, 6016, RESELLER
 tvisionary.co, 4569021, RESELLER
+vungle.com, 68ecd476c18384c801cad5, DIRECT, c107d68beecd2d77
